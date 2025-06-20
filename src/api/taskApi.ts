@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Task, TaskDto } from "../types/Task";
 
-const BASE_URL = "https://localhost:44303/tasks"; // Adjust for actual deployment
+const BASE_URL = "https://localhost:44303/tasks"; 
 
 export const getTasks = () => axios.get<Task[]>(BASE_URL);
 export const createTask = (task: TaskDto) => axios.post(BASE_URL, task);
